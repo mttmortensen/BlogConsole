@@ -20,12 +20,9 @@ public class BlogPost
                 
     }
 
-    public void ReadPost()
+    public override string ToString()
     {
-        Console.WriteLine("Title: " + Title);
-        Console.WriteLine("Body: " + Body);
-        Console.WriteLine("By: " +  Author);
-        Console.WriteLine("Date Posted: " +  TimePosted);
+        return $"Title: {Title}\n Author: {Author}\n Body: {Body}\n Date Posted: {TimePosted}\n";
     }
 }
 

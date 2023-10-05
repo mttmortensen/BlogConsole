@@ -9,7 +9,15 @@ class Program
     static void Main(string[] args)
     {
         BlogPost post = new BlogPost("First Post", "I'm just saying hey, doing another console app", "Matt Mortensen");
-        post.ReadPost();
+
+        List<BlogPost> posts = new List<BlogPost>();
+
+        posts.Add(post);
+
+        BlogManager manager = new BlogManager(posts);
+
+        manager.ShowPosts();  
+
         Console.ReadLine();
     }
 }
