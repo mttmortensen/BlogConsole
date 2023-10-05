@@ -16,9 +16,8 @@ class Program
 
         BlogManager manager = new BlogManager(posts);
 
-        manager.ShowPosts();  
+        manager.ShowPosts();
 
         Console.ReadLine();
     }
 }
-
