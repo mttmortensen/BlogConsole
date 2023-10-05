@@ -33,4 +33,9 @@ class BlogManager
         }
     }
 
+    public void AddPost()
+    {
+
+    }
+
 }
